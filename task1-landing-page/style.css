@@ -1,0 +1,150 @@
+@font-face {
+    font-family: font1;
+    src: url(Ballad\ of\ Dwight\ Frye.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-family: font1;
+    font-weight: 200;
+    font-size: 12px;
+     background-image: url(background.jpg);
+    background-size: cover; 
+    
+    
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 15px;
+    gap: 18px;
+    
+    
+    
+}
+
+
+
+#a1{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    
+    
+}
+
+#a1>a{
+    font-size: 10px;
+    text-decoration: none; 
+    color: rgb(130, 248, 119); 
+}
+
+#a2>a{
+    text-decoration: none; 
+    color: rgb(130, 248, 119); 
+}
+
+#a2>#trix{
+    color: rgb(249, 46, 46);
+}
+
+.nav img{
+    height: 25px;
+    
+    
+}
+
+#a2{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    text-decoration: none;
+}
+
+
+.footer{
+    width: 100%;
+    padding-right: 18px;
+    padding-left: 10px;
+    
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 90%;
+    font-size: 10px;
+    color: rgba(255, 225, 0, 0.664);
+}
+
+.btmleft{
+    width: 300px;
+    padding-left: 10px;
+    position: absolute;
+    top:50%;
+    left: 20px;
+
+    font-size: 10px;
+    font-weight: 100;
+    color: rgb(231, 61, 61);
+
+}
+
+.center{
+    position: relative;
+    
+
+}
+
+.center>h1{
+    position: absolute;
+    font-size: 90px;
+    color: #089601;
+    transform: translate(250px,60px);
+
+    
+}
+
+#i1{
+    position: absolute;
+    top:250px;
+    left:650px;
+    height: 280px;
+    clip-path: inset(0px 150px 20px 160px);
+    
+}
+
+#i2{
+    position: absolute;
+    top:150px;
+    left:850px;
+    height: 250px;
+    clip-path: inset(40px 80px 0px 100px);
+    
+}
+
+#i3 {
+    position: absolute;
+    top:210px;
+    left:1000px;
+    height: 250px;
+    width: 380px;
+    clip-path: inset(10px 100px 0px 70px);
+   /* Top, Right, Bottom, Left offsets */
+}
