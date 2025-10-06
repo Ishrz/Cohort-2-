@@ -27,7 +27,7 @@ Fully responsive, designed for **UI consistency and layout precision**.
 ## 🎯 Task 3 - Product Landing Page
 ### 📸 Preview:
 ![Task 3 Landing page](./task3-landing-page/task3-landing-page.png)
-> A visually appealing **product showcase landing page** with pricing plans, CTA buttons, and responsive design.  
+> A visually appealing **Apple product showcase landing page**   
 Focused on mastering **flexbox, and alignment concepts**.
 
 ---
