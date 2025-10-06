@@ -1,5 +1,5 @@
 
-![Task 3 Landing page](./task3-landing-page/task3-landing-page.png)
+
 
 <!-- # 🚀 COHORT 2.0 - Frontend Practice Tasks
 
