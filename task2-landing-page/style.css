@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: linear-gradient(to right,rgb(163, 208, 223),rgb(201, 156, 163));
+    
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    width: 100%;
+    padding: 20px 20px;
+    /* background-color: rgb(8, 64, 113); */
+}
+
+#nav>button{
+
+    width: 200px;
+    border-radius: 20px;
+    background-color: transparent;
+    background-image: url(plystr.png);
+    border: 1px solid black ;
+    background-repeat: no-repeat;
+    background-position: 80%;
+    padding-right: 25px;
+    
+
+}
+
+#logo{
+    height: 60px;
+}
+
+#nav>#aTags{
+    display: flex;
+    gap: 60px;
+    padding-top: 25px;
+    font-size: 20px;
+    font-weight: 100;
+
+}
+
+.underline{
+    text-decoration: none;
+    color: black;
+}
+
+#shirt{
+    position: absolute;
+    transform: translate(230px );
+    height: 650px;
+}
+
+.center{
+    position: absolute;
+    top:30%;
+    width: 100%;
+    
+    
+}
+
+#content{
+    width: max-content;
+    position: relative;
+    left: 16%;
+    font-size: 30px;
+}
+#content>#l1{
+
+    left: 20%;
+}
+
+.center>#mark{
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    background-color: bisque;
+    top:10%;
+    right: 5%;
+    
+}
+#mark>img{
+    height: 250px;
+}
+
+
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+
+    /* scroll bar solotion without widht */
+    left:0;
+    right: 0;
+    padding: 20px 20px;
+    background-color: rgb(21, 29, 96);
+    position: absolute;
+    align-self: flex-end;
+
+    /* scrollbar issue sol.*/
+    /* width: 100%;
+    box-sizing: border-box; */
+    
+
+}
+
