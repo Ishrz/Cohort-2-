@@ -1,28 +1,27 @@
 
 
 
-<!-- # 🚀 COHORT 2.0 - Frontend Practice Tasks
+# 🚀 COHORT 2.0 - Frontend Practice Tasks
 
 This repository contains a collection of **landing page projects** created as part of my **COHORT 2.0 frontend learning journey**.  
 Each page is coded **manually without using AI**, following the **old-school HTML, CSS, and JS** approach — to understand and grasp every concept clearly 💪
 
 ---
 
-## 🧩 Task 1 - Portfolio Landing Page
+## 🧩 Task 1 - Landing Page
 ### 📸 Preview:
-![Task 1 Screenshot](./Task1-Landing-Page/screenshot.png)
-> A clean and responsive **personal portfolio landing page** showcasing skills, projects, and a contact form.  
-Built using **pure HTML, CSS, and a touch of JavaScript** for smooth section navigation.
+![Task 1 Screenshot](./task1-landing-page/task1-landing-page.png)
+> A clean  **personal portfolio landing page** showcasing skills, projects Built using **pure HTML, CSS**.
 
----
+<!-- ---
 
 ## 🌐 Task 2 - Agency Landing Page
 ### 📸 Preview:
 ![Task 2 Screenshot](./Task2-Landing-Page/screenshot.png)
 > A modern **digital agency homepage** featuring hero sections, services, and client testimonials.  
-Fully responsive, designed for **UI consistency and layout precision**.
+Fully responsive, designed for **UI consistency and layout precision**. -->
 
---- -->
+---
 
 ## 🎯 Task 3 - Product Landing Page
 ### 📸 Preview:
