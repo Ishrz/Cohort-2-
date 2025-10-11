@@ -10,7 +10,7 @@ Each page is coded **manually without using AI**, following the **old-school HTM
 
 ## 🎯 Task  - Bento Grid Layout
 ### 📸 Preview:
-![Task page](./Task4-bento-grid/screenshot.png)
+![Task page](./task4-bento-grid/grid-screenshot.png)
 > A visually appealing **Anime Character showcase Grid Layout**   
 
 

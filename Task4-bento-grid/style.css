@@ -7,12 +7,13 @@
 html,body{
     width: 100%;
     height: 100%;
+    background-color: black;
 }
 
 main{
     width: 100%;
     height: 100%;
-    background-color: gray;
+    background-color: rgb(3, 3, 3);
 
     display: grid;
 
@@ -22,6 +23,17 @@ main{
     grid-template-areas: "left top-right top-right top-right"
                           "left center1 center2 right-1"
                           "left bottom1 bottom2 right-1";
+
+    grid-gap: 10px;
+    border: solid rgb(241, 241, 241);
+    border-radius: 40px;
+    padding: 5px 5px;
+    
+}
+
+div{
+    border-radius: 40px;
+    
 }
 
 div:nth-child(1){
@@ -40,6 +52,7 @@ div:nth-child(2) img{
     object-position: top;
     height: 100%;
     width: 100%;
+    border-radius: 40px;
 }
 
 div:nth-child(2){
