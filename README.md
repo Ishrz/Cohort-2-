@@ -8,6 +8,14 @@ Each page is coded **manually without using AI**, following the **old-school HTM
 
 ---
 
+## 🎯 Task  - Bento Grid Layout
+### 📸 Preview:
+![Task page](./task4-bento-grid/screenshot.png)
+> A visually appealing **Anime Character showcase Grid Layout**   
+
+
+---
+
 ## 🧩 Task 1 - Landing Page
 ### 📸 Preview:
 ![Task 1 Screenshot](./task1-landing-page/task1-landing-page.png)
