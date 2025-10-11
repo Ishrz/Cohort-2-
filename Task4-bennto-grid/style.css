@@ -1,0 +1,92 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+
+    display: grid;
+
+    grid-template-columns: 40% 1fr 1fr 1fr;
+    grid-template-rows: 30% 1fr 1fr;
+
+    grid-template-areas: "left top-right top-right top-right"
+                          "left center1 center2 right-1"
+                          "left bottom1 bottom2 right-1";
+}
+
+div:nth-child(1){
+    background-color: red;
+    grid-area: left;
+    background-image: url(Hitachi.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+div:nth-child(2) img{
+
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    width: 100%;
+}
+
+div:nth-child(2){
+    grid-area: top-right;
+   
+}
+
+div:nth-child(3){
+    background-color: yellow;
+    grid-area: right-1;
+    background-image: url(right-right.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+div:nth-child(4){
+    background-color: mediumslateblue;
+    grid-area: center1;
+    background-image: url(toby.jpg);
+    background-size: cover;
+    background-position-y: 20%;
+    background-repeat: no-repeat;
+}
+
+div:nth-child(5){
+    background-color: green;
+    grid-area: center2;
+
+    background-image: url(L.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div:nth-child(6){
+    background-color: blue;
+    grid-area: bottom1;
+    background-image: url(loffy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div:nth-child(7){
+    background-color: violet;
+    grid-area: bottom2 ;
+    background-image:url(bottom.jfif) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
