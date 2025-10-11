@@ -7,8 +7,14 @@ This repository contains a collection of **landing page projects** created as pa
 Each page is coded **manually without using AI**, following the **old-school HTML, CSS, and JS** approach — to understand and grasp every concept clearly 💪
 
 ---
+## 🎯 Task5  - anime image with Transition and SCSS
+### 📸 Preview:
+![Task page](./task5-SCSS/task5-screenshot.png)
+> A visually appealing **Anime Character showcase with SCSS clean code**   
 
-## 🎯 Task  - Bento Grid Layout
+
+---
+## 🎯 Task4  - Bento Grid Layout
 ### 📸 Preview:
 ![Task page](./task4-bento-grid-layout/grid-screenshot.png)
 > A visually appealing **Anime Character showcase Grid Layout**   
