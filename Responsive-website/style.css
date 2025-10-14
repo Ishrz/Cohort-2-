@@ -79,6 +79,16 @@ nav {
   font-family: nue;
 }
 
+.nav2 button{
+  background-color: #27DFB3;
+  padding: 10px 28px;
+  font-size: 16px;
+  border:none;
+  outline: none;
+  border-radius: 5px;
+  font-weight: 540;
+}
+
 
 .nav2 h5 {
   font-size: 25px; 
@@ -152,6 +162,14 @@ main{
   flex-wrap: wrap;
 }
 
+ .left .price{
+  font-size: 35px;
+}
+
+.left .price .lgray{
+  font-size: 28px;
+}
+
 .section1 .left .tags h5{
   padding: 10px 20px;
   background-color: var(--gray);
@@ -177,15 +195,6 @@ main{
 
 .cta button:nth-child(2){
   background-color: #353535;
-}
-
-
- .left .price{
-  font-size: 35px;
-}
-
-.left .price .lgray{
-  font-size: 28px;
 }
 
 
@@ -281,6 +290,39 @@ main{
   font-size: 2.5vw;
   border-radius: 5px;
   width: 45%;
+}
+
+.left .price{
+  font-size: 6vw;
+}
+
+.left .price .lgray{
+  font-size: 4vw;
+}
+
+.section1 .left .tags h5{
+  padding: 10px 20px;
+  background-color: var(--gray);
+  white-space: nowrap;
+  border-radius: 4px ;
+}
+
+.section1 .left .cta{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.cta button{
+  background-color: var(--green);
+  color: var(--white);
+  padding: 15px 0px;
+  width: 50%;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
 }
 }
 
