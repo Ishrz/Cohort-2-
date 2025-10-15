@@ -7,6 +7,17 @@ This repository contains a collection of **landing page projects** created as pa
 Each page is coded **manually without using AI**, following the **old-school HTML, CSS, and JS** approach — to understand and grasp every concept clearly 💪
 
 ---
+
+## 🎯 Task  - Responsive Hero Section 
+### 📸 Preview:
+![Task page](./Responsive-website-Hero-Section/screenshot2-mobile-view.png)
+> A visually appealing **Hero section of webpage with responsiveness Mobile-view** 
+
+![Task page](./Responsive-website-Hero-Section/screenshot1-desktop-view.png)
+> A visually appealing **Hero section of webpage with responsiveness Desktop-view**   
+
+
+---
 ## 🎯 Task5  - anime image with Transition and SCSS
 ### 📸 Preview:
 ![Task page](./task5-SCSS/task5-screenshot.png)
