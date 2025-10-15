@@ -10,11 +10,17 @@ Each page is coded **manually without using AI**, following the **old-school HTM
 
 ## 🎯 Task  - Responsive Hero Section 
 ### 📸 Preview:
-![Task page](./Responsive-website-Hero-Section/screenshot2-mobile-view.png)
-> A visually appealing **Hero section of webpage with responsiveness Mobile-view** 
+> A visually appealing **Hero section of webpage with responsiveness Mobile-view**
 
+### Live link: https://ishr.netlify.app/
+
+![Task page](./Responsive-website-Hero-Section/screenshot2-mobile-view.png)
+ 
+### Live link: https://ishr.netlify.app/
+
+> A visually appealing **Hero section of webpage with responsiveness Desktop-view** 
 ![Task page](./Responsive-website-Hero-Section/screenshot1-desktop-view.png)
-> A visually appealing **Hero section of webpage with responsiveness Desktop-view**   
+  
 
 
 ---
