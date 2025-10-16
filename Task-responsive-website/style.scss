@@ -1,0 +1,118 @@
+@font-face {
+    font-family: mono;
+    src: url(mono.woff2);
+}
+
+@font-face {
+    font-family: chillax;
+    src: url(Chillax-Regular.woff);
+}
+@font-face {
+    font-family: satoshi;
+    src: url(Satoshi-Light.woff);
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #121212;
+    color: beige;
+
+}
+
+@mixin flex-column($gap:0rem){
+    display: flex;
+    flex-direction: column;
+    gap: $gap ;
+}
+
+main{
+    width: 100%;
+    @include flex-column();
+    
+
+    section{
+        width: 100%;
+        @include flex-column(1rem);
+        align-items: center;
+        padding: 1.1rem;
+        border-radius: 20px;
+        
+
+        .top{
+            width:100%;
+
+            img{
+                width: 100%; 
+                border-radius: 10px ;
+                
+            }
+        }
+
+        .bottom{
+            background-color: #1E1E1E;
+            @include flex-column(3.8rem);
+            padding: 1.5rem;
+            border-radius: 10px;
+
+            .text{
+                @include flex-column(0.7rem);
+
+                p{
+                    font-weight: 200;
+                    font-family: mono;
+                    color: #ABA9A6;
+                
+                }
+                h1{
+                    font-weight: 400;
+                    font-family: chillax;
+                    color: #F4F2ED;
+                    font-size: 2.4rem;
+                    text-transform: uppercase;
+                }
+                p{
+                    font-family: satoshi;
+                    color: #8A8986;
+                    font-size: 1.4rem;
+                    opacity: 0.8;
+                    font-weight: 300;
+                    line-height: 1.6;
+                }
+
+                .btn{
+                    display: flex;
+                    align-items: center;
+
+                    button{
+                        width: fit-content;
+                        padding: 0.7rem 1rem;
+                        border-radius: 50%;
+                        color: #ABA9A6 ;
+                        border: 1px solid #ABA9A6;
+                        background-color: #292929;
+                        outline: none;
+                    }
+
+                    p{
+                        margin-left: 0.9rem;
+                        font-size: 1rem;
+                        color: #F4F2ED;
+                        font-family: mono;
+                    }
+                }
+            }
+
+            
+        }
+    }
+}
