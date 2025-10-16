@@ -19,6 +19,7 @@
 html, body {
   height: 100%;
   width: 100%;
+  font-size: clamp(14px, 1.5vw, 18px);
 }
 
 body {
@@ -26,11 +27,16 @@ body {
   color: beige;
 }
 
+section {
+  max-width: 2000px;
+}
+
 main {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 0rem;
+  align-items: center;
 }
 main section {
   width: 100%;
@@ -56,6 +62,9 @@ main section .bottom {
   padding: 1.5rem;
   border-radius: 10px;
 }
+main section .bottom p {
+  margin-bottom: 1rem;
+}
 main section .bottom .text {
   display: flex;
   flex-direction: column;
@@ -70,13 +79,13 @@ main section .bottom .text h1 {
   font-weight: 400;
   font-family: chillax;
   color: #F4F2ED;
-  font-size: 2.4rem;
+  font-size: clamp(14px, 8vw, 40px);
   text-transform: uppercase;
 }
 main section .bottom .text p {
   font-family: satoshi;
   color: #8A8986;
-  font-size: 1.4rem;
+  font-size: 1rem;
   opacity: 0.8;
   font-weight: 300;
   line-height: 1.6;
@@ -84,6 +93,7 @@ main section .bottom .text p {
 main section .bottom .text .btn {
   display: flex;
   align-items: center;
+  padding: 0%;
 }
 main section .bottom .text .btn button {
   width: -moz-fit-content;
@@ -94,10 +104,43 @@ main section .bottom .text .btn button {
   border: 1px solid #ABA9A6;
   background-color: #292929;
   outline: none;
+  cursor: pointer;
 }
 main section .bottom .text .btn p {
   margin-left: 0.9rem;
   font-size: 1rem;
   color: #F4F2ED;
   font-family: mono;
+  cursor: pointer;
+}
+
+@media (min-width: 2000px) {
+  .top,
+  .bottom {
+    width: 50%;
+  }
+}
+@media (min-width: 900px) {
+  main section {
+    flex-direction: row;
+    padding: 1rem 3rem;
+  }
+  main section .top,
+  main section .bottom {
+    width: 50vw;
+    height: 50vw;
+  }
+  main section .top img {
+    height: 50vw;
+  }
+  main section .bottom {
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+  main section .bottom .text h1 {
+    font-size: clamp(14px, 3.5vw, 50px);
+  }
+  main section .bottom .text p {
+    font-size: 2vw;
+  }
 }/*# sourceMappingURL=style.css.map */
