@@ -239,6 +239,145 @@ main section.view4 .bottom > p {
   color: #ABA9A6;
   font-weight: 900;
 }
+main section.view5 {
+  width: 100%;
+  padding: 1.1rem;
+  font-family: satoshi;
+  font-size: 1.3rem;
+  font-weight: 200;
+  display: flex;
+  justify-content: start;
+}
+main section.view6 {
+  width: 100%;
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+main section.view6 .card1 {
+  width: 100%;
+  background-image: url(card1.png);
+  aspect-ratio: 1/1;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+main section.view6 .card1 .icon, main section.view6 .card1 .bottom {
+  display: flex;
+  background-color: rgba(134, 124, 124, 0.5058823529);
+  padding: 1.5rem 0.5rem;
+  font-size: 1.5rem;
+  -webkit-backdrop-filter: blur(0.3rem);
+          backdrop-filter: blur(0.3rem);
+  border: 0.1px solid rgba(255, 255, 255, 0.425);
+}
+main section.view6 .card1 .top {
+  display: flex;
+  justify-content: end;
+  padding: 1.5rem 1.5rem;
+  gap: 0.8rem;
+}
+main section.view6 .card1 .top .icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+  padding: 1.5rem 1.5rem;
+  font-size: 2rem;
+}
+main section.view6 .card1 .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+  margin: 1.5rem;
+  border-radius: 10px;
+}
+main section.view6 .card2 {
+  width: 100%;
+  background-image: url(card2.png);
+  aspect-ratio: 1/1;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+main section.view6 .card2 .icon, main section.view6 .card2 .bottom {
+  display: flex;
+  background-color: rgba(134, 124, 124, 0.5058823529);
+  padding: 1.5rem 0.5rem;
+  font-size: 1.5rem;
+  -webkit-backdrop-filter: blur(0.3rem);
+          backdrop-filter: blur(0.3rem);
+  border: 0.1px solid rgba(255, 255, 255, 0.425);
+}
+main section.view6 .card2 .top {
+  display: flex;
+  justify-content: end;
+  padding: 1.5rem 1.5rem;
+  gap: 0.8rem;
+}
+main section.view6 .card2 .top .icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+  padding: 1.5rem 1.5rem;
+  font-size: 2rem;
+}
+main section.view6 .card2 .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+  margin: 1.5rem;
+  border-radius: 10px;
+}
+main section.view6 .card3 {
+  width: 100%;
+  background-image: url(card3.png);
+  aspect-ratio: 1/1;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+main section.view6 .card3 .icon, main section.view6 .card3 .bottom {
+  display: flex;
+  background-color: rgba(134, 124, 124, 0.5058823529);
+  padding: 1.5rem 0.5rem;
+  font-size: 1.5rem;
+  -webkit-backdrop-filter: blur(0.3rem);
+          backdrop-filter: blur(0.3rem);
+  border: 0.1px solid rgba(255, 255, 255, 0.425);
+}
+main section.view6 .card3 .top {
+  display: flex;
+  justify-content: end;
+  padding: 1.5rem 1.5rem;
+  gap: 0.8rem;
+}
+main section.view6 .card3 .top .icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+  padding: 1.5rem 1.5rem;
+  font-size: 2rem;
+}
+main section.view6 .card3 .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+  margin: 1.5rem;
+  border-radius: 10px;
+}
 
 @media (min-width: 900px) {
   main section.view1 {
