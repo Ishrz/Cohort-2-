@@ -46,7 +46,7 @@ main{
     align-items: center;
     
 
-    section{
+    section.view1{
         width: 100%;
         @include flex-column(1rem);
         align-items: center;
@@ -130,6 +130,31 @@ main{
             
         }
     }
+
+    section.view2{
+        @include flex-column(1.5rem);
+        width: 100%;
+        padding: 1.1rem;
+        .top,.bottom{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            .element{
+                text-align: center;
+                @include flex-column(0.4rem);
+                small{
+                    opacity: 0.6 ;
+                }
+                h2{
+                    font-size: 3rem;
+                    font-weight: 300;
+                }
+
+            }
+        
+
+        }
+    }
 }
 
 
@@ -137,10 +162,9 @@ main{
 
 @media (min-width:900px){
     main{
-        section{
+        section.view1{
         flex-direction: row;
         padding: 1rem 3rem;
-
         .top,
         .bottom{
             width: 50vw;
@@ -168,7 +192,11 @@ main{
             }
             
         }
+        }
 
+        section.view2{
+            flex-direction: row;
+            padding: 1.8rem 1.5rem;
         }
     }
 }
