@@ -540,11 +540,12 @@ main{
             color: #121212;
             font-family: chillax;
 
+            .bottom{
             .heading h2{
                 font-size: 2.7rem;
                 font-weight: 400;
                 word-spacing: 5px;
-                padding: 1rem;
+                // padding: 1rem;
                 
             }
 
@@ -556,7 +557,9 @@ main{
                 border-radius: 0.7rem;
                 border: none;
             }
+            }
         }
+
     }
 
 }
@@ -733,6 +736,43 @@ main{
             }  
             
 
+        }
+
+        section.view8{
+            
+            padding: 1rem 3rem;
+
+            .text{
+                padding: 1.5rem;
+                .bottom{
+                    @include flex-column(1rem);
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 1rem;
+                    gap: 3rem;
+                    .btn{
+                        display: flex;
+                        align-items: end;
+                        button{
+                        max-width: 100%;
+                        text-align: center;
+                        cursor: pointer;
+                        justify-content: center;
+                        letter-spacing: 1px;
+                        line-height: 110%;
+                        text-size-adjust: 100%;
+                        overflow: hidden;
+                        background-color: #121212;
+                        color: white;
+                        padding: 1rem 1.8rem ;
+                        border-radius: 0.7rem;
+                        font-size: 1rem;
+                        border: none;
+                        }
+                    }      
+                } 
+            }
+            
         }
 
     }
