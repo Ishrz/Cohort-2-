@@ -306,9 +306,11 @@ main{
 
             .icon,.bottom{
                 display: flex;
-                background-color: #867c7c81;
-                padding: 1.5rem 0.5rem;
-                font-size: 1.5rem;
+                background-color: #b2a79e6c;
+                padding: 0.8rem 0.3rem;
+                font-size: 0.9rem;
+                font-family: chillax;
+                font-weight: 100;
                 backdrop-filter: blur(0.3rem);
                 border: 0.1px solid rgba(255, 255, 255, 0.425) ;
             }
@@ -316,14 +318,14 @@ main{
             .top{
                 display: flex;
                 justify-content: end;
-                padding: 1.5rem 1.5rem;
+                padding: 1rem 1rem;
                 gap: 0.8rem;
 
                 .icon{
                   width: fit-content;
                   border-radius: 50%;
-                 padding: 1.5rem 1.5rem;
-                 font-size: 2rem;
+                 padding: 1rem 1rem;
+                 font-size: 1.2rem;
                  
                 }
             }
@@ -332,9 +334,14 @@ main{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding: 2rem 2rem;
+                padding: 1.2rem 1.2rem;
                 margin: 1.5rem;
                 border-radius: 10px;
+                h2{
+                    font-weight: 100;
+                    font-family: chillax;
+                }
+                
             }
 
         }
@@ -349,9 +356,11 @@ main{
 
             .icon,.bottom{
                 display: flex;
-                background-color: #867c7c81;
-                padding: 1.5rem 0.5rem;
-                font-size: 1.5rem;
+                background-color: #b2a79e6c;
+                padding: 0.8rem 0.3rem;
+                font-size: 0.9rem;
+                font-family: chillax;
+                font-weight: 100;
                 backdrop-filter: blur(0.3rem);
                 border: 0.1px solid rgba(255, 255, 255, 0.425) ;
             }
@@ -359,14 +368,14 @@ main{
             .top{
                 display: flex;
                 justify-content: end;
-                padding: 1.5rem 1.5rem;
+                padding: 1rem 1rem;
                 gap: 0.8rem;
 
                 .icon{
                   width: fit-content;
                   border-radius: 50%;
-                 padding: 1.5rem 1.5rem;
-                 font-size: 2rem;
+                 padding: 1rem 1rem;
+                 font-size: 1.2rem;
                  
                 }
             }
@@ -375,9 +384,13 @@ main{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding: 2rem 2rem;
+                padding: 1.2rem 1.2rem;
                 margin: 1.5rem;
                 border-radius: 10px;
+                h2{
+                    font-weight: 100;
+                    font-family: chillax;
+                }
             }
 
         }
@@ -392,9 +405,11 @@ main{
 
             .icon,.bottom{
                 display: flex;
-                background-color: #867c7c81;
-                padding: 1.5rem 0.5rem;
-                font-size: 1.5rem;
+                background-color: #b2a79e6c;
+                padding: 0.8rem 0.3rem;
+                font-size: 0.9rem;
+                font-family: chillax;
+                font-weight: 100;
                 backdrop-filter: blur(0.3rem);
                 border: 0.1px solid rgba(255, 255, 255, 0.425) ;
             }
@@ -402,25 +417,30 @@ main{
             .top{
                 display: flex;
                 justify-content: end;
-                padding: 1.5rem 1.5rem;
+                padding: 1rem 1rem;
                 gap: 0.8rem;
 
                 .icon{
                   width: fit-content;
                   border-radius: 50%;
-                 padding: 1.5rem 1.5rem;
-                 font-size: 2rem;
+                 padding: 1rem 1rem;
+                 font-size: 1.2rem;
                  
                 }
             }
 
             .bottom{
+                
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding: 2rem 2rem;
+                padding: 1.2rem 1.2rem;
                 margin: 1.5rem;
                 border-radius: 10px;
+                h2{
+                    font-weight: 100;
+                    font-family: chillax;
+                }
             }
 
         }
