@@ -447,6 +447,83 @@ main{
 
     }
 
+    section.view7{
+        width: 100%;
+        @include flex-column(1rem);
+        align-items: center;
+        padding: 1.1rem;
+        border-radius: 20px;
+        
+
+        .top{
+            width:100%;
+
+            img{
+                width: 100%; 
+                max-width: 100%;
+                border-radius: 0.9rem ;
+                
+            }
+        }
+
+        .bottom{
+            background-color: #1E1E1E;
+            @include flex-column(0rem);
+            padding: 1.5rem;
+            border-radius: 10px;
+
+            p{
+                margin-bottom: 1rem;
+                 font-family: mono;
+                 color: #ABA9A6;
+                 font-weight: 900;
+                 text-transform: uppercase;
+            }
+            h1{
+                    font-weight: 400;
+                    font-family: chillax;
+                    color: #F4F2ED;
+                    font-size: clamp(14px, 8vw,40px);
+                    text-transform: uppercase;
+                }
+
+            .text{
+                // @include flex-column(0.7rem);
+
+                .btn{
+                    display: flex;
+                    align-items: center;
+                    padding: 0%;
+                    padding-top: 3.5rem;
+
+                    button{
+                        width: fit-content;
+                        padding: 0.7rem 1rem;
+                        border-radius: 50%;
+                        color: #ABA9A6 ;
+                        border: 1px solid #ABA9A6;
+                        background-color: #292929;
+                        outline: none;
+                        cursor: pointer;
+                    }
+
+                    p{
+                        margin-left: 0.9rem;
+                        margin-bottom: 0%;
+                        font-size: 1rem;
+                        color: #ABA9A6;
+                        font-weight: 900;
+                        color: #F4F2ED;
+                        font-family: mono;
+                        cursor: pointer;
+                        
+                    }
+                }
+            }
+
+            
+        }
+    }
 
 }
 
