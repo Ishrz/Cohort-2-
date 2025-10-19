@@ -490,4 +490,11 @@ main section.view6 .card3 .bottom h2 {
   main section.view4 .bottom .paragraphs p {
     font-size: 1rem;
   }
+  main section.view5 {
+    padding: 1rem 3rem;
+  }
+  main section.view6 {
+    flex-direction: row;
+    padding: 1rem 3rem;
+  }
 }/*# sourceMappingURL=style.css.map */
