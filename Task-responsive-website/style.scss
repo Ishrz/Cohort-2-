@@ -660,5 +660,46 @@ main{
             flex-direction: row;
             padding: 1rem 3rem;
         }
+
+        section.view7{
+            flex-direction: row;
+            padding: 1rem 3rem;
+            display: flex;
+            align-items: stretch;
+            .top,.bottom{
+                width: 50vw;
+                
+            }
+
+            .top{
+                display: flex;
+                
+
+                img{
+                    width: 100%;
+                    max-width: 100%;
+                    height: auto;
+                    object-fit:cover;
+                    
+                }
+            }
+            .bottom{
+                justify-content: space-around;
+                padding: 3rem;
+                
+                .text{
+                    
+                    display: flex;
+                    gap: 1rem;
+                    p{
+                        font-size: 1rem;
+                        
+                    }
+                }
+            }  
+            
+
+        }
+
     }
 }

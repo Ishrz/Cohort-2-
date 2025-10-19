@@ -563,4 +563,34 @@ main section.view7 .bottom .text .btn p {
     flex-direction: row;
     padding: 1rem 3rem;
   }
+  main section.view7 {
+    flex-direction: row;
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: stretch;
+  }
+  main section.view7 .top, main section.view7 .bottom {
+    width: 50vw;
+  }
+  main section.view7 .top {
+    display: flex;
+  }
+  main section.view7 .top img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main section.view7 .bottom {
+    justify-content: space-around;
+    padding: 3rem;
+  }
+  main section.view7 .bottom .text {
+    display: flex;
+    gap: 1rem;
+  }
+  main section.view7 .bottom .text p {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */
