@@ -32,6 +32,10 @@ section {
   max-width: 2000px;
 }
 
+footer {
+  max-width: 2000px;
+}
+
 main {
   width: 100%;
   display: flex;
@@ -858,5 +862,31 @@ main footer.footer-container .footer-section .f-bottom .b-bottom .btn button {
     border-radius: 0.7rem;
     font-size: 1rem;
     border: none;
+  }
+  main footer.footer-container {
+    padding: 1rem 3rem;
+  }
+  main footer.footer-container .footer-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 200px;
+    grid-template-areas: "left top" "left f-bottom";
+  }
+  main footer.footer-container .footer-section .left {
+    grid-area: left;
+  }
+  main footer.footer-container .footer-section .top {
+    grid-area: top;
+  }
+  main footer.footer-container .footer-section .top .column-container {
+    flex-direction: row;
+  }
+  main footer.footer-container .footer-section .f-bottom {
+    grid-area: f-bottom;
+    flex-direction: row;
+  }
+  main footer.footer-container .footer-section .f-bottom .b-bottom p {
+    width: -moz-max-content;
+    width: max-content;
   }
 }/*# sourceMappingURL=style.css.map */

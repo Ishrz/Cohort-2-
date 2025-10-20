@@ -45,6 +45,9 @@ section {
     max-width: 2000px;
 
 }
+footer{
+    max-width: 2000px;
+}
 
 main {
     width: 100%;
@@ -1022,6 +1025,40 @@ main {
                 }
             }
 
+        }
+
+        footer.footer-container{
+            padding: 1rem 3rem;
+            .footer-section{
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+                grid-template-rows: 1fr 200px;
+                grid-template-areas: "left top"
+                                      "left f-bottom"
+                                      ;
+                
+                .left{
+                    grid-area: left;
+                }
+                .top{
+                    grid-area: top;
+
+                    .column-container{
+                        flex-direction: row;
+                    }
+                }
+                .f-bottom{
+                    grid-area: f-bottom;
+                    flex-direction: row;
+
+                    .b-bottom{
+                        p{
+                            width: max-content;
+                        }
+                    }
+                    
+                }
+            }
         }
 
     }
