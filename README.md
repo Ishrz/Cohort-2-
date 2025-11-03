@@ -24,6 +24,16 @@ Each page is coded **manually without using AI**, following the **old-school HTM
 
 
 ---
+## 🎯 Task  - Email and Password Validation
+### 📸 Preview:
+![Task page](./Email-Password-validation/ss1.png)
+
+![Task page](./Email-Password-validation/ss2.png)
+
+> A visually appealing **Email and Password Validation Form with JS**   
+
+
+---
 ## 🎯 Task5  - anime image with Transition and SCSS
 ### 📸 Preview:
 ![Task page](./task5-SCSS/task5-screenshot.png)
