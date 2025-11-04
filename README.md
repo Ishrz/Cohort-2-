@@ -24,6 +24,16 @@ Each page is coded **manually without using AI**, following the **old-school HTM
 
 
 ---
+## 🎯 Task  - Created Download progress-Bar using JS setInterval
+### 📸 Preview:
+![Task page](./Download-progressBar/ss1.png)
+
+
+![Task page](./Download-progressBar/ss2.png)
+
+> A visually appealing **Download progress-Bar using JS setInterval and clearTimeout**
+
+---
 ## 🎯 Task  - Email and Password Validation
 ### 📸 Preview:
 ![Task page](./Email-Password-validation/ss1.png)
