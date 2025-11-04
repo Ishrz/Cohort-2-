@@ -20,8 +20,18 @@ Each page is coded **manually without using AI**, following the **old-school HTM
 
 > A visually appealing **Hero section of webpage with responsiveness Desktop-view** 
 ![Task page](./Responsive-website-Hero-Section/screenshot1-desktop-view.png)
-  
 
+---
+
+## 🎯 Task  - User Finder in number of cards
+### 📸 Preview:
+![Task page](./card/ss1.png)
+
+![Task page](./card/ss2.png)
+
+![Task page](./card/ss3.png)
+
+> A visually appealing **Email and Password Validation Form with JS**   
 
 ---
 ## 🎯 Task  - Created Download progress-Bar using JS setInterval
