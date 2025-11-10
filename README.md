@@ -83,7 +83,13 @@ Each page is coded **manually without using AI**, following the **old-school HTM
 Fully responsive, designed for **UI consistency and layout precision**. -->
 
 ---
+## 🎯 Hero Page
+### 📸 Preview:
+![Task 3 Landing page](./practice-page/image.png)
+> A visually appealing **Hero section**   
+Focused on mastering **Grid, and alignment concepts**.
 
+---
 ## 🎯 Task 3 - Product Landing Page
 ### 📸 Preview:
 ![Task 3 Landing page](./task3-landing-page/task3-landing-page.png)
