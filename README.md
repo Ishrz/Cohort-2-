@@ -83,7 +83,13 @@ Each page is coded **manually without using AI**, following the **old-school HTM
 Fully responsive, designed for **UI consistency and layout precision**. -->
 
 ---
+## 🎯 Hero Page
+### 📸 Preview:
+![Hero page](./Carousel/ssimage.png)
+> A visually appealing **Hero section**   
+Focused on mastering **CSS animation,Flex, and alignment concepts**.
 
+---
 ## 🎯 Hero Page
 ### 📸 Preview:
 ![Hero page](./Hero-page/ssimage.png)
