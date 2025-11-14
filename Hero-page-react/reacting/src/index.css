@@ -1,0 +1,175 @@
+@import "tailwindcss";
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+body{
+        background: radial-gradient(rgb(235, 91, 91),rgba(241, 152, 152, 0.877));
+
+}
+
+#root{
+    width: 100%;
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#nav1{
+    width: 100%;
+    height: 50px;
+    padding: 10px 40px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(235, 91, 91, 0.247);
+    border-bottom-left-radius: 15px ;
+    border-bottom-right-radius: 15px ;
+
+}
+
+#nav1 #part1{
+    display: flex;
+    gap: 8px;
+}
+
+#nav1 #gola1{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#nav1 #gola2{
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    background-color: black;
+}
+
+#nav1 #part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    margin-right: 70px;
+    
+}
+
+#nav1 #part2 h4{
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: all ease .2s;
+
+}
+#nav1 #part2 h4:hover{
+    scale: 1.2;
+    color: rgb(48, 2, 2);
+    cursor: pointer;
+}
+
+#nav1 #part2 h4 span{
+    color: rgb(117, 107, 107);
+}
+
+#nav2{
+    width: 100%;
+    height: 50px;
+    padding: 10px 40px;
+    /* background-color: cyan; */
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background-color:rgba(255, 63, 63, 0.247);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#nav2 h4{
+    font-size: 18px;
+    font-weight: 500;
+    transition: all ease .2s;
+}
+
+#nav2 h4:hover{
+    scale: 1.2;
+    color: rgb(48, 2, 2);
+    cursor: pointer;
+}
+
+#content{
+    width: 100%;
+    height: calc(100% - 100px);
+}
+
+#content #text-content{
+    width: 100%;
+    height:45%;
+    /* background-color: rgba(252, 120, 147, 0.747); */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+#text-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 7px;
+}
+#text-content::-webkit-scrollbar-thumb{
+    background:linear-gradient(rgb(252, 117, 117),rgb(253, 4, 4))
+    
+}
+
+.elem{
+    flex-shrink: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.elem h1{
+    font-size: 150px;
+    font-weight: 400;
+}
+
+#image-content{
+    width: 100%;
+    height:calc(100% - 45%) ;
+    /* background-color: crimson; */
+    display: flex;
+    overflow-x: auto;
+}
+
+#image-content::-webkit-scrollbar{
+    display: none;
+}
+
+#image-content img{
+    animation: scroll linear infinite ;
+    animation-duration: 18s;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 35%;
+}
+
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-400%);
+    }
+}
