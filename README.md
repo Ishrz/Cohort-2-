@@ -3,7 +3,7 @@
 
 # 🚀 COHORT 2.0 - Practice Tasks and self experiments
 
-This repository contains a collection of **projects, Tasks and Experimental stuff on Tasks ** created as part of my **COHORT 2.0 Fullstack learning journey**.  
+This repository contains a collection of **projects, Tasks and Experimental stuff on Tasks** created as part of my **COHORT 2.0 Fullstack learning journey**.  
 Each project is coded **manually without using AI**, following the **old-school approach to build muscle memory and logic* — to understand and grasp every concept clearly 💪
 
 ---
