@@ -1,10 +1,10 @@
 
 
 
-# 🚀 COHORT 2.0 - Frontend Practice Tasks
+# 🚀 COHORT 2.0 - Practice Tasks and self experiments
 
-This repository contains a collection of **landing page projects** created as part of my **COHORT 2.0 frontend learning journey**.  
-Each page is coded **manually without using AI**, following the **old-school HTML, CSS, and JS** approach — to understand and grasp every concept clearly 💪
+This repository contains a collection of **projects, Tasks and Experimental stuff on Tasks ** created as part of my **COHORT 2.0 Fullstack learning journey**.  
+Each project is coded **manually without using AI**, following the **old-school approach to build muscle memory and logic* — to understand and grasp every concept clearly 💪
 
 ---
 
@@ -113,17 +113,16 @@ Focused on mastering **flexbox, and alignment concepts**.
 ---
 
 ## 💡 About This Repository
-- 🧠 Each project was coded from scratch, **without any framework or AI-generated code**.  
-- 🎨 Aim: To deeply understand **core frontend principles** — structure, styling, and interactivity.  
-- 🧰 Tools Used: VS Code, Live Server, and Chrome DevTools.
+- 🧠 Each project was coded from scratch, **without any AI-generated code**.  
+- 🎨 Aim: To deeply understand **core principles** — structure, styling, and interactivity.  
 
 
-> 💬 *These landing pages are completely hand-coded — no AI tools were used. The goal is to learn every small detail by practicing the traditional way.*
+> 💬 * The goal is to learn every small detail by practicing the traditional way.*
 
 ---
 
 ### 🌟 Author
 **Mr Shaykh (COHORT 2.0 Student)**  
-Frontend Developer in Progress 🚀
+Fullstack Developer in Progress 🚀
 
 ---
