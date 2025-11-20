@@ -11,23 +11,23 @@ function App(){
 
   let [state,setState]=useState(user)
 
-  function st(){
+  function st(cardIndex){
       setState((prev)=>{
 
         return prev.map((elem,index)=>{
-          if(index === 1){
+          if(index === cardIndex){
             elem= {...elem, friend:!elem.friend}
           }
           return elem;
-        } )
+        })
       } )
-    console.log(state);
   }
+  // console.log(state);
 
   return(
     <>
     <div className='flex flex-wrap'>
-    {state.map((elem,key)=> <Cards key={key} values={elem} fncSend={st} /> )}
+    {state.map((elem,index)=> <Cards key={index} values={elem} index={index} fncSend={st} /> )}
     </div>
     </>
   )

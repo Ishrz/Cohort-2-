@@ -1,7 +1,7 @@
 import React from "react"
 
 
-export default function Cards({values,fncSend}){
+export default function Cards({values,fncSend,index}){
     let {name, para, friend} =   values
     return(
         <>
@@ -13,7 +13,7 @@ export default function Cards({values,fncSend}){
         <h1 className="text-2xl font-bold">{name}</h1>
         <p className="font-light">{para}</p>
         </div>
-        <button onClick={fncSend} className="bg-blue-500 rounded-full mx-[40%] px-3 ">Button</button>
+        <button onClick={()=>fncSend(index) } className={`${friend? 'bg-blue-500':'bg-red-500'} rounded-full mx-[40%] px-3 `}>{friend? 'isFriend':'isNotfriend'}</button>
         </div>
         </>
     )
