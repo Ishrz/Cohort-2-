@@ -8,6 +8,17 @@ Each project is coded **manually without using AI**, following the **old-school 
 
 ---
 
+---
+
+## 🎯 FormHandling using react-Hook-Form in Cards
+### 📸 Preview:
+![Task page](./DynamicForm/DynamicForm/public/ssimage.png)
+
+
+> A visually appealing **Card Adding with the Help of useState and manging data thorugh Props**   
+
+---
+
 ## 🎯 Task  - Responsive Hero Section 
 ### 📸 Preview:
 > A visually appealing **Hero section of webpage with responsiveness Mobile-view**
