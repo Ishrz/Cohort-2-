@@ -2,7 +2,7 @@ function Card({elem,index,removeFormData}){
     let {name, profession,image,info}={...elem}
     return(
         <>
-        <div className="card bg-zinc-600 w-50 flex flex-col items-center justify-center gap-1 p-3 rounded-2xl ">
+        <div className="card bg-zinc-600 w-55 flex flex-col items-center justify-center gap-1 p-3 rounded-2xl ">
             <div className="img-con w-20 h-20 bg-amber-300 rounded-full overflow-hidden  " >
                 <img className="w-full h-full object-cover" src={image} />
             </div>
