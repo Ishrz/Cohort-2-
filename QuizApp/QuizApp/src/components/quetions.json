@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What does the acronym DOM stand for in the context of web development?",
+    "options": [
+      "Document Object Model",
+      "Data Object Manager",
+      "Dynamic Order Module",
+      "Document Oriented Markup"
+    ],
+    "answer": "Document Object Model"
+  },
+  {
+    "question": "Which HTTP method is commonly used to submit data to be processed to a specified resource?",
+    "options": [
+      "GET",
+      "HEAD",
+      "POST",
+      "PUT"
+    ],
+    "answer": "POST"
+  },
+  {
+    "question": "What is the primary purpose of the 'z-index' CSS property?",
+    "options": [
+      "To set the transparency of an element.",
+      "To control the order of flex items.",
+      "To control the vertical stacking order of elements.",
+      "To adjust the space between text characters."
+    ],
+    "answer": "To control the vertical stacking order of elements."
+  },
+  {
+    "question": "In React, which hook is used for managing side effects in functional components?",
+    "options": [
+      "useState",
+      "useContext",
+      "useEffect",
+      "useReducer"
+    ],
+    "answer": "useEffect"
+  },
+  {
+    "question": "Which status code indicates a successful request where the server has fulfilled the request and returned the resource?",
+    "options": [
+      "200 OK",
+      "404 Not Found",
+      "301 Moved Permanently",
+      "500 Internal Server Error"
+    ],
+    "answer": "200 OK"
+  }
+]
