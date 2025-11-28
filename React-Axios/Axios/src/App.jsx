@@ -2,30 +2,47 @@ import axios from "axios";
 import "./App.css";
 import 'axios'
 import { useEffect, useState } from "react";
+import api from "./axios";
 const App = () => {
   const [users, setUsers]=useState([])
   const[formDetails,setFormDetails]= useState({name:"", age:""})
 
 
   let dataFetch = async () => {
-      let response = await axios({
-      url: "/users",
-      baseURL: "https://69289694b35b4ffc50163d1b.mockapi.io",
-    });
+    
+    //produxtion approach , importing api from axios.js file where base URL and other common config defined
+    let response= await api.get("/users")
+    
+    // let response = await axios.get("https://69289694b35b4ffc50163d1b.mockapi.io/users");
+
+      // let response=await axios({
+      //   url:"/users",
+      //   baseURL:"https://69289694b35b4ffc50163d1b.mockapi.io",
+      //   method:"GET"
+      // })
+
     setUsers(response.data)
     
   };
 
   let dataPost= async () => {
-    let response= await axios({
-      url:"/users",
-      baseURL:"https://69289694b35b4ffc50163d1b.mockapi.io",
-      method:'POST',
-      data:{
-        name:"aGIANnEWna",
-        age:20,
-      }
-    })
+
+    //api in axios.js
+    await api.post("/users", {name:"newName",age:33})
+
+    // await axios.post("https://69289694b35b4ffc50163d1b.mockapi.io/users",
+    //                    { name:"FromShorHand", age:20}
+    //                 )
+
+    // let response= await axios({
+    //   url:"/users",
+    //   baseURL:"https://69289694b35b4ffc50163d1b.mockapi.io",
+    //   method:'POST',
+    //   data:{
+    //     name:"aGIANnEWna",
+    //     age:20,
+    //   }
+    // })
     dataFetch()
   }
 
@@ -48,46 +65,53 @@ const App = () => {
 
   let postInput=async (evt)=>{
     evt.preventDefault()
-    if((formDetails.name=" ") || (formDetails.age=" ")){
+    
+    await api.post("/users",formDetails)
 
-      return alert("Please enter valid response")
-    } 
-    let response= await axios({
-      url:"/users",
-      baseURL:"https://69289694b35b4ffc50163d1b.mockapi.io",
-      method:'POST',
-      data: formDetails
-    })
+    // await axios.post("https://69289694b35b4ffc50163d1b.mockapi.io/users",formDetails)
+
+
+    // let response= await axios({
+    //   url:"/users",
+    //   baseURL:"https://69289694b35b4ffc50163d1b.mockapi.io",
+    //   method:'POST',
+    //   data: formDetails
+    // })
     
       dataFetch()
       setFormDetails({name:"", age:""})
-    // if(true){
-
-    //   evt.target[0].value=""
-    //   evt.target[1].value=""
-    // }
   
   }
   
   let editData=async (user)=>{
-    let response= await axios({
-      url:`/users/${formDetails.id}`,
-      baseURL:"https://69289694b35b4ffc50163d1b.mockapi.io",
-      method:'PUT',
-      data: formDetails
-    })
+
+    await api.put(`users/${formDetails.id}`, formDetails)
+    
+    // await axios.put(`https://69289694b35b4ffc50163d1b.mockapi.io/users/${formDetails.id}`, formDetails)
+
+    // let response= await axios({
+    //   url:`/users/${formDetails.id}`,
+    //   baseURL:"https://69289694b35b4ffc50163d1b.mockapi.io",
+    //   method:'PUT',
+    //   data: formDetails
+    // })
     dataFetch()
     console.log(formDetails)
       setFormDetails({name:"", age:""})
   }
 
   let deleteData= async (id)=>{
-      await axios({
-      url:`/users/${id}`,
-      baseURL:"https://69289694b35b4ffc50163d1b.mockapi.io",
-      method:'DELETE',
+    
+    await api.delete(`users/${id}`)
 
-    })
+    // await axios.delete(`https://69289694b35b4ffc50163d1b.mockapi.io/users/${id}`)
+    
+    //   await axios({
+    //   url:`/users/${id}`,
+    //   baseURL:"https://69289694b35b4ffc50163d1b.mockapi.io",
+    //   method:'DELETE',
+
+    // })
     dataFetch()
   }
   
@@ -100,7 +124,7 @@ const App = () => {
         </button>
 
         {formDetails.editMode?
-        <button onClick={editData} className="bg-amber-300">Edit Data</button>
+        <button onClick={editData} className="bg-amber-300"> Save Edit Data</button>
         :
         <button onClick={dataPost} className="bg-indigo-600">Post Data</button>
         }
