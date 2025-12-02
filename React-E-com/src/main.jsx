@@ -6,6 +6,7 @@ import Navbar from './components/Navbar.jsx'
 import Products from './components/Products.jsx'
 import Home from './components/Home.jsx'
 import About from './components/About.jsx'
+import SingleProduct from './components/SingleProduct.jsx'
 let router = createBrowserRouter([
   {
     path:'/',
@@ -19,6 +20,10 @@ let router = createBrowserRouter([
       {
         path:'products',
         element:<Products/>
+      },
+      {
+        path:'products/:id',
+        element:<SingleProduct/>
       },
       {
         path:'about',

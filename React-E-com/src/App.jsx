@@ -5,7 +5,7 @@ import './App.css'
 
 const App = () => {
   return (
-    <div className='bg-red-200 w-full h-full'>
+    <div className='bg-zinc-200 w-full h-full'>
      <Navbar/>
      <Outlet />
       
