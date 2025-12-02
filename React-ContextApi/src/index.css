@@ -3,3 +3,12 @@ html,body, #root{
   height: 100%;
   box-sizing: border-box;
 }
+
+#root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  font-size: 2rem;
+}
