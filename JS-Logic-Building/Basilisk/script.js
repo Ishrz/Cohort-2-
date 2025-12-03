@@ -38,9 +38,9 @@ const render=()=>{
     })
 }
 
-setInterval(()=>{
+let clrIntv=setInterval(()=>{
     let head=null;
-
+    
     if(direction==='left'){
         head={ x:snake[0].x ,y:snake[0].y-1}
     }else if(direction==='right'){
@@ -50,7 +50,13 @@ setInterval(()=>{
     }else if(direction==='up'){
         head={x:snake[0].x-1, y:snake[0].y}
     }
-
+    
+    if(head.x<0|| head.x>=rows || head.y<0 || head.y>=cols){
+        alert("Game over")
+        return clearInterval(clrIntv);
+    }
+    
+    
     snake.forEach(segment=>{
         blocksDiv[`${segment.x}-${segment.y}`].classList.remove('fill')
     })
@@ -58,9 +64,9 @@ setInterval(()=>{
     
     snake.unshift(head)
     snake.pop()
-
     render()
-},1000)
+
+},300)
 
 
 
