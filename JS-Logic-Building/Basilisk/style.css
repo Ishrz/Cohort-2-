@@ -13,11 +13,14 @@ html,body,main{
 
 :root{
 
-    /* primary background color */
+    /* primary color */
+    --primary-color:rgb(243, 228, 228);
+
+    /* background primary color */
     --bg-primary-color:rgb(29, 28, 28);
 
-    /* primary color */
-    --color-primary:rgb(243, 228, 228);
+    /* fill bg primary color */
+    --fill-bg-primary-color:rgb(238, 172, 172);
 
     /* paddings */
     --padding-xm:4px;
@@ -54,31 +57,33 @@ section{
 
     display: flex;
     justify-content: space-between;
-    color: var(--color-primary);
+    color: var(--primary-color);
 }
 
 .info{
     padding: var(--padding-sm) var(--padding-md);
-    border: 1px solid var(--color-primary);
+    border: 1px solid var(--primary-color);
     border-radius: var(--border-radious-sm);
 }
 
 .board{
     width: 100%;
     background-color: var(--bg-primary-color);
-    border: 2px solid var(--color-primary);
+    border: 2px solid var(--primary-color);
     flex-grow: 1;
 
     display: grid;
-    grid-template-columns:repeat(auto-fill,minmax(30px,1fr));
-    grid-template-rows: repeat(auto-fill,minmax(30px,1fr));
+    grid-template-columns:repeat(auto-fill,minmax(35px,1fr));
+    grid-template-rows: repeat(auto-fill,minmax(35px,1fr));
 }
 
 .board .block{
     /* background-color: red; */
-    width: 30px;
-    height: 30px;
-    border: 1px solid var(--color-primary);
+    /* width: 30px;
+    height: 30px; */
+    border: 1px solid var(--primary-color);
+}
 
-   
+.fill{
+    background-color: var(--fill-bg-primary-color);
 }
