@@ -21,6 +21,8 @@ const snake=[
 ];
 let direction='right'
 
+let food={x:Math.floor(Math.random() * rows), y:Math.floor(Math.random()*cols)}
+
 for (let row=0; row<rows; row++){
     for( let col=0; col<cols; col++){
         let blockdiv=document.createElement('div')
@@ -33,13 +35,10 @@ for (let row=0; row<rows; row++){
 }
 
 const render=()=>{
-     snake.forEach((segment)=>{
-        blocksDiv[`${segment.x}-${segment.y}`].classList.add('fill')
-    })
-}
-
-let clrIntv=setInterval(()=>{
+     
     let head=null;
+
+    blocksDiv[`${food.x}-${food.y}`].classList.add('food')
     
     if(direction==='left'){
         head={ x:snake[0].x ,y:snake[0].y-1}
@@ -55,15 +54,24 @@ let clrIntv=setInterval(()=>{
         alert("Game over")
         return clearInterval(clrIntv);
     }
+
     
-    
+
+
     snake.forEach(segment=>{
         blocksDiv[`${segment.x}-${segment.y}`].classList.remove('fill')
     })
-    
-    
+
     snake.unshift(head)
     snake.pop()
+
+    snake.forEach((segment)=>{
+        blocksDiv[`${segment.x}-${segment.y}`].classList.add('fill')  
+    })
+}
+
+let clrIntv=setInterval(()=>{
+    
     render()
 
 },300)
