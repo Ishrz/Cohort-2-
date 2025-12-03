@@ -14,7 +14,7 @@ html,body,main{
 :root{
 
     /* primary color */
-    --primary-color:rgb(243, 228, 228);
+    --primary-color:rgb(255, 255, 255);
 
     /* background primary color */
     --bg-primary-color:rgb(29, 28, 28);
@@ -22,7 +22,7 @@ html,body,main{
     /* food primary color */
     --food-primary-color:rgb(21, 5, 248);
     /* fill bg primary color */
-    --fill-bg-primary-color:rgb(238, 172, 172);
+    --fill-bg-primary-color:rgb(5, 255, 18);
 
     /* paddings */
     --padding-xm:4px;
@@ -74,6 +74,7 @@ section{
     border: 2px solid var(--primary-color);
     flex-grow: 1;
 
+
     display: grid;
     grid-template-columns:repeat(auto-fill,minmax(35px,1fr));
     grid-template-rows: repeat(auto-fill,minmax(35px,1fr));
@@ -84,6 +85,7 @@ section{
     /* width: 30px;
     height: 30px; */
     border: 1px solid var(--primary-color);
+    border-radius: 50%;
 }
 
 .fill{
