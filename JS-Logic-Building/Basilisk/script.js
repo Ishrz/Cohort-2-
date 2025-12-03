@@ -1,4 +1,9 @@
 const board=document.querySelector('.board');
+const startButton=document.querySelector('.btn-start')
+const modal=document.querySelector('.modal')
+const restartButton=document.querySelector('.btn-restart');
+const gameOverModal=document.querySelector('.game-over')
+const gameStartModal=document.querySelector('.start-game')
 
 const widhtBlock=35;
 const heightBlock=35;
@@ -6,6 +11,7 @@ const heightBlock=35;
 const cols= Math.floor(board.clientWidth /widhtBlock)
 const rows= Math.floor(board.clientHeight / heightBlock)
 
+let intervalId=null;
 
 //similar done with below loops
 // for(i=0; i< rows*cols;i++){
@@ -15,10 +21,7 @@ const rows= Math.floor(board.clientHeight / heightBlock)
 // }
 
 const blocksDiv=[];
-const snake=[
-    {x:5, y:7},
-
-];
+let snake=[{x:5, y:7}];
 let direction='right'
 
 let food={x:Math.floor(Math.random() * rows), y:Math.floor(Math.random()*cols)}
@@ -51,8 +54,12 @@ const render=()=>{
     }
     
     if(head.x<0|| head.x>=rows || head.y<0 || head.y>=cols){
-        alert("Game over")
-        return clearInterval(clrIntv);
+        modal.style.display='flex'
+        gameStartModal.style.display='none'
+        gameOverModal.style.display='flex'
+        
+        return clearInterval(intervalId);
+            
     }
 
     if(head.x===food.x && head.y===food.y){
@@ -75,11 +82,11 @@ const render=()=>{
     })
 }
 
-let clrIntv=setInterval(()=>{
+// let clrIntv=setInterval(()=>{
     
-    render()
+//     render()
 
-},300)
+// },300)
 
 
 
@@ -89,3 +96,22 @@ addEventListener('keydown',(evt)=>{
     if(evt.key=== 'ArrowRight')  direction='right'
     if(evt.key=== 'ArrowLeft')  direction='left'
 })
+
+startButton.addEventListener('click',()=>{
+    modal.style.display='none'
+    intervalId=setInterval(()=>{ render()},300)
+    // render()
+})
+
+let restartGame=()=>{
+
+    blocksDiv[`${food.x}-${food.y}`].classList.remove('food')
+    snake.forEach(segment=>{
+        blocksDiv[`${segment.x}-${segment.y}`].classList.remove('fill')
+    })
+    modal.style.display='none'
+    snake=[{x:5, y:7}];
+    food={x:Math.floor(Math.random() * rows), y:Math.floor(Math.random()*cols)}
+    intervalId=setInterval(()=>{ render()},300)
+}
+restartButton.addEventListener('click', restartGame)
