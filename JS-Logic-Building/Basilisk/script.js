@@ -53,6 +53,7 @@ for (let row=0; row<rows; row++){
 const render=()=>{
      
     let head=null;
+    
 
     blocksDiv[`${food.x}-${food.y}`].classList.add('food')
     
@@ -112,14 +113,13 @@ addEventListener('keydown',(evt)=>{
     if(evt.key=== 'ArrowLeft')  direction='left'
 })
 
-startButton.addEventListener('click',()=>{
-    modal.style.display='none'
-    intervalId=setInterval(()=>{ render()},300)
-    timerIntervalId=setInterval(()=>{
-        let [min,sec]= time.split("-").map(Number)
+function timerStart(){
+    timeElement.innerText=`00:00`;
+    
+    let [min,sec]= time.split("-").map(Number)
 
         if(sec==59){
-            min=1;
+            min+=1;
             sec=0;
         }else{
             sec+=1;
@@ -127,6 +127,24 @@ startButton.addEventListener('click',()=>{
 
         time=`${(min.toString()).padStart(2,'0')}-${(sec.toString()).padStart(2,'0')}`
         timeElement.innerText=time
+}
+
+startButton.addEventListener('click',()=>{
+    modal.style.display='none'
+    intervalId=setInterval(()=>{ render()},300)
+    timerIntervalId=setInterval(()=>{
+        timerStart()
+        // let [min,sec]= time.split("-").map(Number)
+
+        // if(sec==59){
+        //     min+=1;
+        //     sec=0;
+        // }else{
+        //     sec+=1;
+        // }
+
+        // time=`${(min.toString()).padStart(2,'0')}-${(sec.toString()).padStart(2,'0')}`
+        // timeElement.innerText=time
     },1000)
 })
 
@@ -139,11 +157,16 @@ let restartGame=()=>{
     score=0;
     scoreElement.innerText=0;
     timeElement.innerText=`00:00`;
+     time=  `00-00`;
+    
 
     modal.style.display='none'
     snake=[{x:5, y:7}];
     food={x:Math.floor(Math.random() * rows), y:Math.floor(Math.random()*cols)}
+    
+    timerIntervalId=setInterval(()=>{timerStart()},1000)
     intervalId=setInterval(()=>{ render()},300)
+    
 }
 restartButton.addEventListener('click', restartGame)
 
