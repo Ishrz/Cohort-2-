@@ -65,7 +65,8 @@ section{
 .info{
     padding: var(--padding-sm) var(--padding-md);
     border: 1px solid var(--primary-color);
-    border-radius: var(--border-radious-sm);
+    border-radius: var(--border-radious-lg);
+    box-shadow:inset 0 0 20px rgb(72, 255, 0);
 }
 
 .board{
@@ -86,10 +87,13 @@ section{
     height: 30px; */
     border: 1px solid var(--primary-color);
     border-radius: 50%;
+    box-shadow: 0 0 15px rgba(109, 145, 245, 0.836);
 }
 
 .fill{
-    background-color: var(--fill-bg-primary-color);
+    /* background-color: var(--fill-bg-primary-color); */
+    background: linear-gradient(to right,red,yellow,blue,red,pink,green,purple,crimson);
+    
 }
 
 .food{
@@ -126,12 +130,12 @@ section{
     border: none;
     font-size: 1.3rem;
     color: rgb(14, 231, 14);
-    background: linear-gradient(black,red) ;
+    background: linear-gradient(rgb(13, 148, 13),red) ;
     transition: all linear 0.3s;
     cursor: pointer;
 }
 .btn:hover{
-        background: linear-gradient(rgba(145, 123, 123, 0.651),rgb(105, 7, 7)) ;
+        background: linear-gradient(rgba(42, 235, 13, 0.651),rgb(105, 7, 7)) ;
         color: greenyellow;
         scale: 1.1;
 }
