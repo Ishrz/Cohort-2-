@@ -26,13 +26,6 @@ const rows= Math.floor(board.clientHeight / heightBlock)
 let intervalId=null;
 let timerIntervalId=null;
 
-//similar done with below loops
-// for(i=0; i< rows*cols;i++){
-//     let blockdiv=document.createElement('div')
-// blockdiv.classList.add('block')
-//     board.appendChild(blockdiv)
-// }
-
 const blocksDiv=[];
 let snake=[{x:5, y:7}];
 let direction='right'
