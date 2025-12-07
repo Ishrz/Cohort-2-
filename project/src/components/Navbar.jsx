@@ -15,7 +15,7 @@ const Navbar = () => {
     <div className="container px-4 mx-auto relative text-sm">
         <div className="flex justify-between item-center">
             <div className="flex items-center flex-shrink-0">
-                <img className='h-10 w-10 mr-2' src={logo} alt=''/>
+                <img className='h-10 w-10 mr-2 bg-linear-to-r from-purple-500 to-black-500 clip-text text-transparent inline-block rounded-full' src={logo} alt=''/>
                 <span className="text-xl tracking-right">
                     VirtualR
                 </span>
@@ -31,7 +31,7 @@ const Navbar = () => {
                 <a href='3' className='py-2 px-3 border rounded-md'>
                 Sign In
                 </a>
-                <a href='#' className='bg-linear-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md '>
+                <a href='#' className='bg-linear-to-r from-purple-500 to-orange-800 py-2 px-3 rounded-md '>
                     Creat an acoount
                     </a> 
             </div>
@@ -54,7 +54,7 @@ const Navbar = () => {
                         <a href='#' className='py-2 px-3 border rounded-md'>
                             Sign IN
                         </a>
-                        <a href='#' className='py-2 px-3 border rounded-md bg-linear-to-r from-orange-500 to-orange-800'>
+                        <a href='#' className='py-2 px-3 border rounded-md bg-linear-to-r from-purple-500 to-orange-800'>
                             Create an account
                         </a>
                     </div>

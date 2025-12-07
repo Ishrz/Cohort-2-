@@ -6,7 +6,7 @@ const HeroSection = () => {
     <div className="flex flex-col  items-center mt-6 lg:mt-20">
       <h1 className=" text-center text-4xl sm-text-6xl lg:text-7xl mx-auto  tracking wide">
         VirtualR Build tools
-        <span className="bg-linear-to-r from-orange-500 to-red-800 text-transparent bg-clip-text">
+        <span className="bg-linear-to-r from-purple-500 to-red-800 text-transparent bg-clip-text">
           {" "}
           for developers
         </span>
@@ -19,11 +19,11 @@ const HeroSection = () => {
       <div className="flex max-[420px]:flex-col gap-4 justify-center my-10">
         <a
           href="#"
-          className="bg-linear-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 text-center rounded-md"
+          className="bg-linear-to-r from-purple-500 to-orange-800 shadow-[5px_5px_20px_rgba(0,0,0,0.8)] py-3 px-4 mx-3 text-center rounded-md"
         >
           Start for free
         </a>
-        <a href="#" className="py-3 px-4 mx-3 rounded-md border ">
+        <a href="#" className="py-3 px-4 mx-3 rounded-md border shadow-[5px_5px_15px_rgba(0,0,0,0.8)] ">
           Documentation
         </a>
       </div>
@@ -32,7 +32,7 @@ const HeroSection = () => {
           autoplay
           loop
           mute
-          className="rounded-lg w-1/2 border border-orange-700 shadow-orange mx-2 my-4 "
+          className="rounded-lg w-1/2 border border-purple-500 shadow-purple mx-2 my-4 shadow-[5px_5px_15px_rgba(0,0,1,7.5)]"
         >
           <source src={video1} type="video/mp4" />
           Your browser does not support the video tag.
@@ -41,7 +41,7 @@ const HeroSection = () => {
           autoplay
           loop
           mute
-          className="rounded-lg w-1/2 border border-orange-700 shadow-orange mx-2 my-4 "
+          className="rounded-lg w-1/2 border border-purple-500 shadow-orange mx-2 my-4 shadow-[5px_5px_15px_rgba(0,0,1,7.5)]"
         >
           <source src={video2} type="video/mp4" />
           Your browser does not support the video tag.
