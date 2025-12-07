@@ -14,9 +14,9 @@ const FeatureSection = () => {
                 </span>
             </h2>
         </div>
-        <div className="flex flex-wrap gap-2 mt-10 lg:mt-20  ">
+        <div className="flex flex-wrap m-5  mt-10 lg:mt-20  ">
             {features.map( (item,index)=>(
-                <div key={index} className="w-full sm:1/2 lg:w-1/3 hover:shadow-purple-500 shadow-sm  ">
+                <div key={index} className="w-full sm:w-1/2  lg:w-1/3 hover:shadow-purple-500 shadow-sm  ">
                     <div className="flex">
                         <div className="flex mx-6 h-10 w-10 p-2 bg-neutral-900 text-purple-700  justify-center items-center rounded-full">
                             {item.icon}
