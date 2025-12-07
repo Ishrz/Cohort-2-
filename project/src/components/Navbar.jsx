@@ -17,7 +17,9 @@ const Navbar = () => {
             <div className="flex items-center flex-shrink-0">
                 <img className='h-10 w-10 mr-2 bg-linear-to-r from-purple-500 to-black-500 clip-text text-transparent inline-block rounded-full' src={logo} alt=''/>
                 <span className="text-xl tracking-right">
-                    VirtualR
+                    <a href='#HeroSection'>
+                    ZetaVR
+                    </a>
                 </span>
             </div>
             <ul className='hidden lg:flex items-center ml-14 space-x-12'>

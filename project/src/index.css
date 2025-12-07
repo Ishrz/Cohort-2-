@@ -9,3 +9,11 @@
   font-family: "Poppins", sans-serif;
   color-scheme: dark ;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
+[id]{
+  scroll-margin-top: 80px;
+}

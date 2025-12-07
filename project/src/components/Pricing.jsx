@@ -2,7 +2,7 @@ import {pricingOptions} from '../constants'
 import { CheckCircle2 } from 'lucide-react'
 const Pricing = () => {
   return (
-    <div className='mt-20'>
+    <div id="Pricing" className='mt-20'>
         <h2 className='text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wider'>
             Pricing
         </h2>
