@@ -1,7 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Wrapper from '../components/Wrapper'
-
+import api from '../config/axios'
 const News = ({className}) => {
+
+  const fetchNews=async()=>{
+     const response =await api.get(`/everything?q=bitcoin&apiKey=6d03a571bf8f456c8fdbc0ef2df3502c`)
+
+     console.log(response.data)
+  }
+
+  useEffect(()=>{
+    fetchNews();
+  },
+  [])
+
   return (
     <Wrapper>
 
