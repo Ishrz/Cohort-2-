@@ -8,24 +8,30 @@ const NewsContext=createContext()
 const NewsContextProvider=({children})=>{
 
     const [news,setNews]=useState([])
+    const [loader,setLoader]=useState(false)
 
     
     const fetchNews = async (url="/everything?q=bitcoin") => {
+        setLoader(true)
         try{
             const response = await api.get(
                 `${url}&apiKey=${import.meta.env.VITE_API_KEY}`
             );
+            setLoader(false)
             return response.data;
 
         }catch(error){
             console.log(error)
+            setLoader(false)
         }
     };
 
     let value={
         news,
         setNews,
-        fetchNews
+        fetchNews,
+        setLoader,
+        loader
     }
 
     return(

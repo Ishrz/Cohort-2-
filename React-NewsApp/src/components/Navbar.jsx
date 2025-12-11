@@ -9,7 +9,6 @@ const Navbar = ({className}) => {
   let timer=null;
   const searchHandler=(e)=>{
     const searchValue= e.target.value
-    console.log(searchValue)
     if(!searchValue) return;
     clearTimeout(timer)
     timer=setTimeout(async()=>{

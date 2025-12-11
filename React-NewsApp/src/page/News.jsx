@@ -1,13 +1,15 @@
 import { useEffect } from 'react'
 import Wrapper from '../components/Wrapper'
 import { useMycontext } from '../context/NewsContext'
+import Loader from '../components/Loader'
 useMycontext
 const News = ({className}) => {
 
-  const {fetchNews, news,setNews}=useMycontext()
+  const {fetchNews, news,setNews,loader}=useMycontext()
 
   //starting fetch on initail render
   useEffect( ()=>{
+    
     ;(async()=>{
       const data=await fetchNews()
       setNews(data.articles)
@@ -16,6 +18,8 @@ const News = ({className}) => {
     
   },
   [])
+
+  if(loader) return <Loader className=" w-fit h-90 m-auto p-25 "/>
 
   return (
     <Wrapper>

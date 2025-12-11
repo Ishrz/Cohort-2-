@@ -1,9 +1,9 @@
 import React from 'react'
 import Wrapper from './Wrapper'
 
-const Footer = () => {
+const Footer = ({className}) => {
   return (
-    <div className=' bg-neutral text-neutral-content'>
+    <div className={`${className} bg-neutral text-neutral-content`}>
       <Wrapper>
         <footer className="footer sm:footer-horizontal grid-rows-2 p-10">
   <nav>
