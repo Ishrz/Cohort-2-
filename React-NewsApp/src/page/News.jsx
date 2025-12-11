@@ -20,7 +20,7 @@ const News = ({className}) => {
   return (
     <Wrapper>
 
-    <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-6 ${className}`}>
+    <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3  ${className}`}>
     {news.map( (newsDetails,index)=> {
       if(!newsDetails.urlToImage) return null;
       return(
@@ -37,7 +37,7 @@ const News = ({className}) => {
 
 const NewsCard=({detail})=>{
     return(
-        <div className="card bg-base-200  shadow-sm">
+        <div className="card bg-base-200  shadow-sm m-2">
   <figure>
     <img
       className='w-full aspect-video object-contain'
