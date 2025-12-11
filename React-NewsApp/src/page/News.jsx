@@ -4,9 +4,10 @@ import api from '../config/axios'
 const News = ({className}) => {
 
   const fetchNews=async()=>{
-     const response =await api.get(`/everything?q=bitcoin&apiKey=6d03a571bf8f456c8fdbc0ef2df3502c`)
+     const response =await api.get(`/everything?q=bitcoin&apiKey=${import.meta.env.VITE_API_KEY}`)
 
      console.log(response.data)
+    
   }
 
   useEffect(()=>{
