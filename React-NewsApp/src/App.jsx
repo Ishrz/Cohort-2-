@@ -3,7 +3,9 @@ import Navbar from './components/Navbar'
 import News from './page/News'
 import Category from './components/Category'
 import Footer from './components/Footer'
+import { useMycontext } from './context/NewsContext'
 const App = () => {
+  
   return (
     <div>
       <Navbar className="sticky top-0 z-10"/>

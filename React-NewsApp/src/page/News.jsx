@@ -1,31 +1,33 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import Wrapper from '../components/Wrapper'
-import api from '../config/axios'
+import { useMycontext } from '../context/NewsContext'
+useMycontext
 const News = ({className}) => {
 
-  const fetchNews=async()=>{
-     const response =await api.get(`/everything?q=bitcoin&apiKey=${import.meta.env.VITE_API_KEY}`)
+  const {fetchNews, news,setNews}=useMycontext()
 
-     console.log(response.data)
+  //starting fetch on initail render
+  useEffect( ()=>{
+    ;(async()=>{
+      const data=await fetchNews()
+      setNews(data.articles)
+    })()
     
-  }
-
-  useEffect(()=>{
-    fetchNews();
+    
   },
   [])
 
   return (
     <Wrapper>
 
-    <div className={`grid grid-cols-4 gap-6 ${className}`}>
-    <NewsCard/>
-    <NewsCard/>
-    <NewsCard/>
-    <NewsCard/>
-    <NewsCard/>
-    <NewsCard/>
-    <NewsCard/>
+    <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-6 ${className}`}>
+    {news.map( (newsDetails,index)=> {
+      if(!newsDetails.urlToImage) return null;
+      return(
+        <NewsCard key={index} detail={newsDetails} />
+      )
+    })}
+
     </div>
 
     </Wrapper>
@@ -33,19 +35,20 @@ const News = ({className}) => {
 }
 
 
-const NewsCard=()=>{
+const NewsCard=({detail})=>{
     return(
         <div className="card bg-base-200  shadow-sm">
   <figure>
     <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+      className='w-full aspect-video object-contain'
+      src={detail?.urlToImage}
       alt="Shoes" />
   </figure>
   <div className="card-body">
-    <h2 className="card-title">Card Title</h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+    <h2 className="card-title line-clamp-2">{detail?.title}</h2>
+    <p className='line-clamp-3 text-neutral-400'>{detail?.description}</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
+      <button onClick={()=>window.open(detail.url)} className="btn badge-outline mt-4 hover:scale-105 active:scale-105 hover:bg-neutral-800 active:bg-neutral-800">Read More</button>
     </div>
   </div>
 </div>
